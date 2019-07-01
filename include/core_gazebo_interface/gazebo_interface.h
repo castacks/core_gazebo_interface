@@ -15,6 +15,8 @@ public:
   virtual bool request_control();
   virtual bool arm();
   virtual bool disarm();
+  virtual bool is_armed();
+  virtual bool has_control();
 
   virtual void command_velocity(geometry_msgs::TwistStamped msg);
 };

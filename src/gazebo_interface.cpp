@@ -24,6 +24,14 @@ bool GazeboInterface::disarm(){
   return true;
 }
 
+bool GazeboInterface::is_armed(){
+  return true;
+}
+
+bool GazeboInterface::has_control(){
+  return true;
+}
+
 void GazeboInterface::command_velocity(geometry_msgs::TwistStamped msg){
   cmd_vel_pub.publish(msg);
 }
